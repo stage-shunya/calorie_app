@@ -1,0 +1,2 @@
+class Chinese < ApplicationRecord
+end
