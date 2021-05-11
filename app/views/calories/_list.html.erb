@@ -1,0 +1,20 @@
+<table>
+	<thead>
+	<tr>
+		<th>名称</th>
+		<th>容量</th>
+		<th>cal</th>
+		<th></th>
+	</tr>
+	</thead>
+	<tbody>
+	<% items.each do |item| %>
+	<tr>
+		<td><%= item.name %></td>
+		<td><%= item.amount %></td>
+		<td><%= item.calories %>kcal</td>
+		<td>詳細</td>
+	</tr>
+	<% end %>
+	</tbody>
+</table>

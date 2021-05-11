@@ -2,23 +2,11 @@
 <h1>消費カロリー一覧</h1>
 <div class="">
   <h2>和食</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>名称</th>
-        <th>容量</th>
-        <th>cal</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <td>ハンバーグ</td>
-      <td>1個</td>
-      <td>435cal</td>
-      <td>詳細</td>
-    </tbody>
-  </table>
+    <%= render partial: 'list', locals: {items: @japaneses} %>
   <h2>洋食</h2>
+  <%= render partial: 'list', locals: {items: @westerns} %>
   <h2>中華</h2>
+    <%= render partial: 'list', locals: {items: @chineses} %>
   <h2>お菓子・デザート</h2>
+    <%= render partial: 'list', locals: {items: @desserts} %>
 </div>
