@@ -1,0 +1,22 @@
+<% provide(:title, '必要な運動量') %>
+<h1>消費するために必要なカロリー</h1>
+<div>
+	<h2><%= items.name %></h2>
+	<p>カロリー：<%= items.calories %></p>
+</div>
+<table>
+	<thead>
+	<tr>
+		<th>運動</th>
+		<th>時間</th>
+	</tr>
+	</thead>
+	<tbody>
+	<% @sports.each do |sport| %>
+	<tr>
+		<td><%= sport.name %></td>
+		<td><%= sport.mets %></td>
+	</tr>
+	<% end %>
+	</tbody>
+</table>

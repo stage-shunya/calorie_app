@@ -3,4 +3,9 @@ Rails.application.routes.draw do
 
   resources :calories
 
+  resources :japaneses, only: [:index]
+  resources :chineses, only: [:index]
+  resources :westerns, only: [:index]
+  resources :desserts, only: [:index]
+
 end

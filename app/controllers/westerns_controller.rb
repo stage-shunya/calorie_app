@@ -1,0 +1,2 @@
+class WesternsController < ApplicationController
+end

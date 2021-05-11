@@ -1,0 +1,2 @@
+class ChinesesController < ApplicationController
+end

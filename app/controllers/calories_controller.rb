@@ -7,4 +7,8 @@ class CaloriesController < ApplicationController
     @desserts = Dessert.select(:name, :amount, :calories)
   end
 
+  def edit
+		@sports = Sport.select(:name, :mets)
+  end
+
 end
