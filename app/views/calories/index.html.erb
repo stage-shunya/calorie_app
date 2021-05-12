@@ -1,12 +1,8 @@
 <% provide(:title, 'カロリー一覧') %>
 <h1>消費カロリー一覧</h1>
 <div class="">
-  <h2>和食</h2>
-    <%= render partial: 'list', locals: {items: @japaneses} %>
-  <h2>洋食</h2>
-  <%= render partial: 'list', locals: {items: @westerns} %>
-  <h2>中華</h2>
-    <%= render partial: 'list', locals: {items: @chineses} %>
-  <h2>お菓子・デザート</h2>
-    <%= render partial: 'list', locals: {items: @desserts} %>
+<div><%= link_to '和食', japaneses_path%></div>
+<div><%= link_to '洋食', westerns_path%></div>
+<div><%= link_to '中華', chineses_path%></div>
+<div><%= link_to 'お菓子・デザート', desserts_path%></div>
 </div>
